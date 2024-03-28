@@ -1,7 +1,6 @@
 //Components
-import AppHero from './Components/appHero/AppHero'
 import Header from './Components/header/Header'
-
+import AppHero from './Components/appHero/AppHero'
 
 //Styles
 import './Styles/App.css'
