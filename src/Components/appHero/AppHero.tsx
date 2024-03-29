@@ -6,7 +6,7 @@ function AppHero() {
   return (
     <>
         <div>
-            <Slider/>
+            <Slider autoSlide={false}/>
         </div>
     </>
   )

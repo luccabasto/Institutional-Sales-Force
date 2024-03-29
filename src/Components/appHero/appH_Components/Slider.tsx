@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useEffect, useRef} from 'react'
 import imageSlide from './Slider_Images'
 
 const screenWidth=window.innerWidth
@@ -7,23 +7,45 @@ const screenWidth=window.innerWidth
 import { HiChevronLeft,HiChevronRight } from 'react-icons/hi2'
 
 
-function Slider() {
-  //buttons 
-  const elementRef=useRef();
+function Slider({ autoSlide = false, autoSlideInterval = 6000}) {
 
-  const sliderRight=(element)=>{
-    element.scrollLeft+=screenWidth-110
+  useEffect(() => {
+    let slideInterval;
+    if (autoSlide) {
+      slideInterval = setInterval(() => {
+        if (elementRef.current) {
+          // Se estiver no último slide, volte para o primeiro slide
+          if (elementRef.current.scrollLeft + elementRef.current.clientWidth === elementRef.current.scrollWidth) {
+            elementRef.current.scrollLeft = 0;
+          } else {
+            sliderRight();
+          }
+        }
+      }, autoSlideInterval);
+    }
+    return () => clearInterval(slideInterval);
+  }, [autoSlide, autoSlideInterval]);
+  
+
+  //buttons 
+  const elementRef=useRef(null);
+  const sliderRight=()=>{
+    if(elementRef.current){
+      elementRef.current.scrollLeft += screenWidth - 110;
+    }
 }
 
-const sliderLeft=(element)=>{
-    element.scrollLeft-=screenWidth-110
+const sliderLeft=()=>{
+    if(elementRef.current){
+      elementRef.current.scrollLeft -= screenWidth - 110;
+    }
 }
 
   return (
    <div>
-    <HiChevronLeft className=" bg-transparent text-gray text-[30px] absolute mx-8 mt-[200px] cursor-pointer hidden lg:block" onClick={()=>sliderLeft(elementRef.current)} />
+    <HiChevronLeft className="bg-white rounded-full opacity-80 text-gray-500 hover:opacity-90 text-[30px] absolute mx-8 mt-[200px] cursor-pointer hidden lg:block" onClick={()=>sliderLeft()} />
 
-    <HiChevronRight className=" bg-transparent text-gray text-[30px] absolute mx-8 mt-[200px] right-0 cursor-pointer hidden lg:block" onClick={()=>sliderRight(elementRef.current)} />
+    <HiChevronRight className=" bg-white rounded-full opacity-80 text-gray-500 hover:opacity-90  text-[30px] absolute mx-8 mt-[200px] right-0 cursor-pointer hidden lg:block" onClick={()=>sliderRight()} />
 
     <div className='flex overflow-x-auto w-full px-16 py-4 scrollbar-none scroll-smooth' ref={elementRef}>
         {imageSlide.map(imagem =>(
