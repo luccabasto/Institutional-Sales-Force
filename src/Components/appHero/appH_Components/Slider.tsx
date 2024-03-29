@@ -45,7 +45,7 @@ const sliderLeft=()=>{
    <div>
     <HiChevronLeft className="bg-white rounded-full opacity-80 text-gray-500 hover:opacity-90 text-[30px] absolute mx-8 mt-[200px] cursor-pointer hidden lg:block" onClick={()=>sliderLeft()} />
 
-    <HiChevronRight className=" bg-white rounded-full opacity-80 text-gray-500 hover:opacity-90  text-[30px] absolute mx-8 mt-[200px] right-0 cursor-pointer hidden lg:block" onClick={()=>sliderRight()} />
+    <HiChevronRight className=" bg-white rounded-full opacity-80 text-gray-500 hover:opacity-90 text-[30px] absolute mx-8 mt-[200px] right-0 cursor-pointer hidden lg:block" onClick={()=>sliderRight()} />
 
     <div className='flex overflow-x-auto w-full px-16 py-4 scrollbar-none scroll-smooth' ref={elementRef}>
         {imageSlide.map(imagem =>(
