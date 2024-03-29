@@ -86,7 +86,7 @@ function Header() {
             <div className='hidden md:flex gap-8'>
                 {menu.map((item)=>(
                     <HeaderItem name={item.name} Icon={item.icon} key={item.id}/>
-                ))};
+                ))}
             </div>
 
               
@@ -100,19 +100,20 @@ function Header() {
             </div>
 
             <div className='flex md:hidden gap-5'> {/**Responsive ASIDE */}
-                    {menuASIDE.map((item, index)=>index=0&&(
-                        <HeaderItem name={''} Icon={item.icon} key={item.id}/>
+                    {menuASIDE.map((item, index)=>index===0&&(
+                        <HeaderItem name={''} Icon={'item.icon'} key={item.id}/>
                     ))}
 
                     <div className=' md:hidden' onClick={()=> setToggleASIDE(!toggleASIDE)}>
                         <HeaderItem name={''}  Icon={HiMiniUserCircle}/>
-                        {toggleASIDE ?
-                            <div className={`absolute mt-3 border-[1px] border-gray-700 p-3 px-5 py-4 rounded-md ${window.innerWidth < 768 ? 'right-0' : ''}`}>{menuASIDE.map((item,index) => index<2&&(
+                        {toggleASIDE && 
+                            <div className={`absolute mt-3 border-[1px] border-gray-700 p-3 px-5 py-4 rounded-md ${window.innerWidth < 768 ? 'right-0' : ''}`}>
+                                {menuASIDE.map((item,index) => index<2&&(
                                     
                                     <HeaderItem name={item.name} Icon={item.icon} key={index}/>
                                 ))}
                             </div>
-                        : null}
+                         }
 
                     </div>
 
