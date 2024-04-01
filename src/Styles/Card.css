@@ -94,7 +94,7 @@ small{
     
 }
 
-.card-container{
+.card-container, .container{
     background-color: var(--bkg);
     display: flex;
     flex-wrap: wrap;

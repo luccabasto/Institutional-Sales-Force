@@ -15,7 +15,7 @@ function Slider({ autoSlide = false, autoSlideInterval = 6000}) {
       slideInterval = setInterval(() => {
         if (elementRef.current) {
           // Se estiver no último slide, volte para o primeiro slide
-          if (elementRef.current.scrollLeft + elementRef.current.clientWidth === elementRef.current.scrollWidth) {
+          if (elementRef.current.scrollLeft + elementRef.current.clientWidth >= elementRef.current.scrollWidth) {
             elementRef.current.scrollLeft = 0;
           } else {
             sliderRight();
