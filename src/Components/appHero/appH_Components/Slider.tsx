@@ -26,20 +26,21 @@ function Slider({ autoSlide = false, autoSlideInterval = 6000}) {
     return () => clearInterval(slideInterval);
   }, [autoSlide, autoSlideInterval]);
   
-
-  //buttons 
-  const elementRef=useRef(null);
-  const sliderRight=()=>{
-    if(elementRef.current){
+  // Buttons
+  const elementRef = useRef(null);
+  
+  const sliderRight = () => {
+    if (elementRef.current) {
       elementRef.current.scrollLeft += screenWidth - 110;
     }
-}
-
-const sliderLeft=()=>{
-    if(elementRef.current){
+  };
+  
+  const sliderLeft = () => {
+    if (elementRef.current) {
       elementRef.current.scrollLeft -= screenWidth - 110;
     }
-}
+  };
+  
 
   return (
    <div>

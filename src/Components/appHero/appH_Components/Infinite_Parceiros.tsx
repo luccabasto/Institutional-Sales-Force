@@ -37,67 +37,67 @@ export default function InfiniteParceiros() {
 ]
 
   return (
-    <div className='_sliderParceiro max-sm:invisible'>
+    <div id='parceiroS' className='_sliderParceiro max-sm:hidden max-sm:overflow-x-auto'>
 
       <p className='text-center text-xl py-5 text-gray-800 font-semibold'>Mais de 150.000 empresas, grandes, médias e pequenas, estão expandindo seus negócios com a Salesforce.</p> 
 
       <div className=' _slider overflow-x-auto scrollbar-none group'>
         <div className='_slide-track group-hover:pausa size-auto p-7'>
-          <div className='slide'>
+          <div className='_slide'>
               <img src={label_01} alt='logo gympass' className='
             min-w-[200px] h-[200px] object-contain rounded-full bg-white '/>
           </div>   
-          <div className='slide'>
+          <div className='_slide'>
               <img src={label_02} alt='logo gympass' className='
             min-w-[200px] h-[200px] object-contain rounded-full bg-white '/>
           </div>   
-          <div className='slide'>
+          <div className='_slide'>
               <img src={label_03} alt='logo gympass' className='
             min-w-[200px] h-[200px] object-contain rounded-full bg-white '/>
           </div>   
-          <div className='slide'>
+          <div className='_slide'>
               <img src={label_04} alt='logo gympass' className='
             min-w-[200px] h-[200px] object-contain rounded-full bg-white '/>
           </div>   
-          <div className='slide'>
+          <div className='_slide'>
               <img src={label_05} alt='logo gympass' className='
             min-w-[200px] h-[200px] object-contain rounded-full bg-white '/>
           </div>   
-          <div className='slide'>
+          <div className='_slide'>
               <img src={label_06} alt='logo gympass' className='
             min-w-[200px] h-[200px] object-contain rounded-full bg-white '/>
           </div>   
-          <div className='slide'>
+          <div className='_slide'>
               <img src={label_07} alt='logo gympass' className='
             min-w-[200px] h-[200px] object-contain rounded-full bg-white '/>
           </div>  
             {/**DOUBLE */}
 
-           <div className='slide'>
+           <div className='_slide'>
               <img src={label_02} alt='logo gympass' className='
             min-w-[200px] h-[200px] object-contain rounded-full bg-white '/>
           </div>   
-          <div className='slide'>
+          <div className='_slide'>
               <img src={label_03} alt='logo gympass' className='
             min-w-[200px] h-[200px] object-contain rounded-full bg-white '/>
           </div>   
-          <div className='slide'>
+          <div className='_slide'>
               <img src={label_04} alt='logo gympass' className='
             min-w-[200px] h-[200px] object-contain rounded-full bg-white '/>
           </div>   
-          <div className='slide'>
+          <div className='_slide'>
               <img src={label_07} alt='logo gympass' className='
             min-w-[200px] h-[200px] object-contain rounded-full bg-white '/>
           </div>   
-          <div className='slide'>
+          <div className='_slide'>
               <img src={label_05} alt='logo gympass' className='
             min-w-[200px] h-[200px] object-contain rounded-full bg-white '/>
           </div>   
-          <div className='slide'>
+          <div className='_slide'>
               <img src={label_01} alt='logo gympass' className='
             min-w-[200px] h-[200px] object-contain rounded-full bg-white '/>
           </div>   
-          <div className='slide'>
+          <div className='_slide'>
               <img src={label_06} alt='logo gympass' className='
             min-w-[200px] h-[200px] object-contain rounded-full bg-white '/>
           </div>   
@@ -106,30 +106,6 @@ export default function InfiniteParceiros() {
 
       </div>
       
-      <div className='flex overflow-x-auto space-x-16 _slider'>
-
-         {/*<div className='flex space-x-16 item-center mt-14 w-full _slide'>
-            <img src={label_01} alt='logo gympass' className='min-w-[200px] h-[200px] object-contain rounded-full bg-white items-center grid grid-coluns-1'/>
-            <img src={label_02} alt='logo inter' className='min-w-[200px] h-[200px] object-contain rounded-full bg-white items-center grid grid-coluns-1'/>
-            <img src={label_03} alt='logo formula1' className='min-w-[200px] h-[200px] object-contain rounded-full bg-white items-center grid grid-coluns-1'/>
-            <img src={label_04} alt='logo sumup' className='min-w-[200px] h-[200px] object-contain rounded-full bg-white items-center grid grid-coluns-1'/>
-            <img src={label_05} alt='logo itau' className='min-w-[200px] h-[200px] object-contain rounded-full bg-white items-center grid grid-coluns-1'/>
-            <img src={label_06} alt='logo bic' className='min-w-[200px] h-[200px] object-contain rounded-full bg-white items-center grid grid-coluns-1'/>
-            <img src={label_07} alt='logo globoplay' className='min-w-[200px] h-[200px] object-contain rounded-full bg-white items-center grid grid-coluns-1'/>
-            
-        </div>
-        <div className='flex space-x-16 item-center mt-14 w-full'>
-            <img src={label_01} alt='logo gympass' className='min-w-[200px] h-[200px] object-contain rounded-full bg-white items-center grid grid-coluns-1'/>
-            <img src={label_02} alt='logo inter' className='min-w-[200px] h-[200px] object-contain rounded-full bg-white items-center grid grid-coluns-1'/>
-            <img src={label_03} alt='logo formula1' className='min-w-[200px] h-[200px] object-contain rounded-full bg-white items-center grid grid-coluns-1'/>
-            <img src={label_04} alt='logo sumup' className='min-w-[200px] h-[200px] object-contain rounded-full bg-white items-center grid grid-coluns-1'/>
-            <img src={label_05} alt='logo itau' className='min-w-[200px] h-[200px] object-contain rounded-full bg-white items-center grid grid-coluns-1'/>
-            <img src={label_06} alt='logo bic' className='min-w-[200px] h-[200px] object-contain rounded-full bg-white items-center grid grid-coluns-1'/>
-            <img src={label_07} alt='logo globoplay' className='min-w-[200px] h-[200px] object-contain rounded-full bg-white items-center grid grid-coluns-1'/> 
-        </div>
-  */ }
-        
-      </div>   
     </div>
   )
 }

@@ -8,7 +8,7 @@ import '../../../Styles/About_Comp.css'
 
 export const About_Component = () => {
   return (
-    <section className='default _default relative'>
+    <section id='aboutS' className='default _default relative'>
         <article className='text-center py-7'>
             <h2 className='_title text-md mb-5 font-medium'>
                 O que é a Salesforce?

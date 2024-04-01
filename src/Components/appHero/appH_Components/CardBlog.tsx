@@ -11,7 +11,7 @@ import  '../../../Styles/Card.css'
 function CardBlog() {
   return (
     
-    <div className='cardBlog default'>
+    <div id='novidadesS' className='cardBlog default'>
         <h3 className='relative bottom-5'>Novidades</h3>
         <section className='card-container'>
                 

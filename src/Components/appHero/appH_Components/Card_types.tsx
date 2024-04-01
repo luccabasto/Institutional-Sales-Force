@@ -12,8 +12,8 @@ export interface ButtonInterface{
 
 export interface CardInterface{
     indicator?:string,
-    badge?: BadgeInterface.
-    image?: string,
+    badge?: BadgeInterface;
+    image?: string;
     title:string,
     subtitle?:string,
     body:string,
