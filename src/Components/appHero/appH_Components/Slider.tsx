@@ -10,7 +10,7 @@ import { HiChevronLeft,HiChevronRight } from 'react-icons/hi2'
 function Slider({ autoSlide = false, autoSlideInterval = 6000}) {
 
   useEffect(() => {
-    let slideInterval;
+    let slideInterval:number;
     if (autoSlide) {
       slideInterval = setInterval(() => {
         if (elementRef.current) {
@@ -27,7 +27,7 @@ function Slider({ autoSlide = false, autoSlideInterval = 6000}) {
   }, [autoSlide, autoSlideInterval]);
   
   // Buttons
-  const elementRef = useRef(null);
+  const elementRef = useRef<HTMLDivElement>(null);
   
   const sliderRight = () => {
     if (elementRef.current) {
