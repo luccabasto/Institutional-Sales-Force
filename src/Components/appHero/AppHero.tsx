@@ -2,7 +2,7 @@ import React from 'react'
 //Components
 import Slider from './appH_Components/Slider'
 import CardBlog from './appH_Components/CardBlog'
-import InfiniteParceiros from './appH_Components/InfiniteParceiros'
+import Infinite_Parceiros from './appH_Components/Infinite_Parceiros'
 import { About_Component} from './appH_Components/About_Component'
 
 //test - footer
@@ -22,7 +22,7 @@ function AppHero() {
         </div>
         <div className='_default'>
           <About_Component/>
-          <InfiniteParceiros/>
+          <Infinite_Parceiros/>
           <Constructor_layout/>
         </div>
         <Footer/>
