@@ -1,32 +1,30 @@
-import React, { useState} from 'react';
+import { useState} from 'react';
 import header_logo from './../../assets/images/header_logo.png';
+//Components
+import HeaderItem from './Header_Item';
 
 //Icons - react-icons
     //Hi2
+    {/* 
+    Icon que entraram futuramente com o desenvolvimento
+    {HiHome, HiMagnifyingGlass,  HiMiniUserCircle,} 
+    */}
 import {
-    HiMiniUserCircle, 
     HiBars4,
-    HiHome,
-    HiMagnifyingGlass,
     HiOutlineShoppingBag,
     HiOutlineBookOpen
 } from 'react-icons/hi2';
-
-import { HiBarsArrowDown } from 'react-icons/hi2';
-    //md
-import {MdSupportAgent} from 'react-icons/md';
-    //io5
+//io5
 import {IoBusiness} from 'react-icons/io5';
 
-//Components
-
-import HeaderItem from './Header_Item';
-
-
-
+{/* Já importei para facilitar no processo de desenvolvimento
+import { HiBarsArrowDown } from 'react-icons/hi2';
+    //md
+import {MdSupportAgent} from 'react-icons/md'; */}
+    
 function Header() {
 ///navegação
-    const navTo = (path) =>{
+    const navTo = (path: string) =>{
         const element = document.querySelector(path);
         if(element) {
             element.scrollIntoView({
@@ -35,11 +33,11 @@ function Header() {
         } else {
             window.location.pathname = path
         }
-    }
+    } 
 
 /// menu
     const [toggle, setToggle]=useState(false);
-    const [toggleASIDE, setToggleASIDE] =useState(false); 
+    {/*const [toggleASIDE, setToggleASIDE] =useState(false); */}
 
     const menu =[
         {
@@ -60,6 +58,9 @@ function Header() {
     
 ]
 
+   {/* O MenuASIDE é para as funções de entrar no login e suporte, serão desevolvidas ao 
+   fazermos a ligação com o banco de dados.
+
     const menuASIDE =[
 
         {
@@ -73,7 +74,8 @@ function Header() {
             icon:MdSupportAgent
 
         }
-    ]
+    ] 
+*/}
   return (
     <>
     <div className='justify-between p-5 text-black flex items-center text-[15px] font-semibold'>
@@ -105,14 +107,16 @@ function Header() {
 
         </ul>
         {/* Menu ASIDE* */}
-        {/*<ul className='flex hidden gap-5 cursor-pointer hover:underline underline-offset-8 mb-2'>
+        {/*
+        <ul className='flex hidden gap-5 cursor-pointer hover:underline underline-offset-8 mb-2'>
           <li onClick={()=> console.log('Clicado')} className='hover:underline underline-offset-8'>
             ACESSO
             </li>
           <li className='hover:underline underline-offset-8'>
             SUPORTE
             </li>
-            </ul> */}
+            </ul> 
+        */}
     </div>
   </>
   )

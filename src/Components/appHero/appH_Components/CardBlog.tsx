@@ -83,6 +83,74 @@ function CardBlog() {
                         filled: true,
                         icon: <MdOutlineReadMore/>
                     }}/>
+                <Card_Interface 
+                    body='Hiii'
+                    title='Hi2'
+                    image='https://source.unsplash.com/random/500x400'
+                    badge={{
+                        text:'Aprendizado', 
+                        filled:true,
+                    }}
+                    indicator='Best'
+                    subtitle='Great'
+                    btn={{
+                        text: 'Leia mais',
+                        href: '#',
+                        type: 'secondary',
+                        filled: true,
+                        icon: <MdOutlineReadMore/>
+                    }}/>
+                <Card_Interface 
+                    body='Hiii'
+                    title='Hi2'
+                    image='https://source.unsplash.com/random/500x400'
+                    badge={{
+                        text:'Aprendizado', 
+                        filled:true,
+                    }}
+                    indicator='Best'
+                    subtitle='Great'
+                    btn={{
+                        text: 'Leia mais',
+                        href: '#',
+                        type: 'secondary',
+                        filled: true,
+                        icon: <MdOutlineReadMore/>
+                    }}/>
+                <Card_Interface 
+                    body='Hiii'
+                    title='Hi2'
+                    image='https://source.unsplash.com/random/500x400'
+                    badge={{
+                        text:'Aprendizado', 
+                        filled:true,
+                    }}
+                    indicator='Best'
+                    subtitle='Great'
+                    btn={{
+                        text: 'Leia mais',
+                        href: '#',
+                        type: 'secondary',
+                        filled: true,
+                        icon: <MdOutlineReadMore/>
+                    }}/>
+                <Card_Interface 
+                    body='Hiii'
+                    title='Hi2'
+                    image='https://source.unsplash.com/random/500x400'
+                    badge={{
+                        text:'Aprendizado', 
+                        filled:true,
+                    }}
+                    indicator='Best'
+                    subtitle='Great'
+                    btn={{
+                        text: 'Leia mais',
+                        href: '#',
+                        type: 'secondary',
+                        filled: true,
+                        icon: <MdOutlineReadMore/>
+                    }}/>
 
         </section>
         

@@ -1,9 +1,9 @@
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export const PRODUTOS = [
-    {name : "Nome do Produto", link: "#"},
-    {name : "Nome do Produto", link: "#"},
-    {name : "Nome do Produto", link: "#"},
+    {name : "Nome do Produto a ser adicionado", link: "#"},
+    {name : "Nome do Produto a ser adicionado", link: "#"},
+    {name : "Nome do Produto a ser adicionado", link: "#"},
 ];
 export const BLOG = [
     {name : "Título do artigo referido", link: "#"},
