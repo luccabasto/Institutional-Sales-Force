@@ -1,4 +1,3 @@
-
 import { CardInterface } from './Card_types'
 import styles from '../../../Styles/CardInter.module.css'
 import Card_Badge from './Card_Badge'

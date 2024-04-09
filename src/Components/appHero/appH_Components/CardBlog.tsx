@@ -1,8 +1,6 @@
-import React from 'react'
 import { MdOutlineReadMore } from 'react-icons/md'
 // components
-import Card_Badge from './Card_Badge'
-import Card_Button from './Card_Button'
+
 import Card_Interface from './Card_Interface'
 
 //styles

@@ -1,4 +1,3 @@
-
 import { ButtonInterface } from './Card_types'
 import styles from '../../../Styles/Button.module.css'
 

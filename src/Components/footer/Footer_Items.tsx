@@ -1,4 +1,3 @@
-import React from 'react'
 import {PRODUTOS, BLOG, SOBRE, DEVTEAM, SUPORTE} from "./Footer_Menu"
 
 export const Footer_Items = () => {

@@ -1,4 +1,3 @@
-import React from 'react'
 ///image
 import about_component360 from '../../../assets/images/about_component360.webp'
 

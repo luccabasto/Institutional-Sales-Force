@@ -4,15 +4,10 @@ import Slider from './appH_Components/Slider'
 import CardBlog from './appH_Components/CardBlog'
 import Infinite_Parceiros from './appH_Components/Infinite_Parceiros'
 import { About_Component} from './appH_Components/About_Component'
-import Header from '../header/Header'
-
-//test - footer
 import Footer from '../footer/Footer'
+
 //Construção layout
 import{Constructor_layout} from '../appHero/fragments_Component/Constructor_layout'
-
-
-
 
 function AppHero() {
   return (

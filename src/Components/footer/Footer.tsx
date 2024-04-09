@@ -1,4 +1,3 @@
-import React from "react"
 import {Footer_Items} from "./Footer_Items"
 import { Footer_Social } from "./Footer_Social"
 

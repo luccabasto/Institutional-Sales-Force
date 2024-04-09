@@ -1,4 +1,3 @@
-import React from 'react'
 import { BadgeInterface } from './Card_types'
 import styles from '../../../Styles/Badge.module.css'
 
