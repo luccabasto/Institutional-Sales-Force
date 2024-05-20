@@ -8,6 +8,7 @@ import Footer from '../footer/Footer'
 
 //Construção layout
 import{Constructor_layout} from '../appHero/fragments_Component/Constructor_layout'
+import Cep from '../pages_Components/Forms_Component'
 
 function AppHero() {
   return (
@@ -22,6 +23,7 @@ function AppHero() {
           <About_Component/>
           <Infinite_Parceiros/>
           <Constructor_layout/>
+          <Cep/>
         </div>
         <Footer/>
     </>
